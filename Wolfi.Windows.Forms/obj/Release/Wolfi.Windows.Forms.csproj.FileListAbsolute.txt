@@ -1,0 +1,9 @@
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\bin\Release\Wolfi.Windows.Forms.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\bin\Release\Wolfi.Windows.Forms.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\bin\Release\Wolfi.Core.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\bin\Release\Wolfi.Core.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\bin\Release\de\Wolfi.Core.resources.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\obj\Release\Wolfi.Windows.Forms.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\obj\Release\Wolfi.Windows.Forms.csproj.CopyComplete
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\obj\Release\Wolfi.Windows.Forms.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Windows.Forms\obj\Release\Wolfi.Windows.Forms.pdb

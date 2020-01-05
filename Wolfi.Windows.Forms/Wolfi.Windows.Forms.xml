@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wolfi.Windows.Forms</name>
+    </assembly>
+    <members>
+        <member name="T:Wolfi.Windows.Forms.Anwendungsfenster">
+            <summary>
+            Stellt Das Basis Anwendungsfenster für Anwendungen bereit.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.Anwendungsfenster.#ctor">
+            <summary>
+            Initialisiert ein neues Anwendungsfenster.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Windows.Forms.Anwendungsfenster.AppKontext">
+            <summary>
+            Ruft die Infrastruktur ab
+            oder legt diese fest.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.Anwendungsfenster.OnLoad(System.EventArgs)">
+            <summary>
+            Löst das Load Ereignis aus.
+            </summary>
+            <remarks>Wird um das Wiederherstellen der
+            alten Fensterposition und -größe mit dem Fenstermanager
+            der Infrastruktur erweitert.</remarks>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.Anwendungsfenster.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Löst das FormClosing Ereignis aus.
+            </summary>
+            <remarks>Wird um das Speichern der Fensterposition und -größe
+            mit dem Fenstermanager der Infrastruktur erweitert.</remarks>
+        </member>
+        <member name="F:Wolfi.Windows.Forms.Anwendungsfenster.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.Anwendungsfenster.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.Anwendungsfenster.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Windows.Forms.PrintPreviewDialogEx">
+            <summary>
+            Erweitert den Standard Windows PrintPreviewDialog um
+            die Möglichkeit die Position und Fenstergröße 
+            zu speichern und wiederherzustellen.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Windows.Forms.PrintPreviewDialogEx.AppKontext">
+            <summary>
+            Ruft die Infrastruktur ab
+            oder legt diese fest.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.PrintPreviewDialogEx.OnLoad(System.EventArgs)">
+            <summary>
+            Löst das Load Ereignis aus.
+            </summary>
+            <remarks>Wird um das Wiederherstellen der
+            alten Fensterposition und -größe mit dem Fenstermanager
+            der Infrastruktur erweitert.</remarks>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.PrintPreviewDialogEx.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Löst das FormClosing Ereignis aus.
+            </summary>
+            <remarks>Wird um das Speichern der Fensterposition und -größe
+            mit dem Fenstermanager der Infrastruktur erweitert.</remarks>
+        </member>
+        <member name="F:Wolfi.Windows.Forms.PrintPreviewDialogEx.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.PrintPreviewDialogEx.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Wolfi.Windows.Forms.PrintPreviewDialogEx.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

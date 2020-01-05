@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\bin\Release\netstandard2.1\Wolfi.Core.deps.json
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\bin\Release\netstandard2.1\Wolfi.Core.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\bin\Release\netstandard2.1\Wolfi.Core.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\bin\Release\netstandard2.1\de\Wolfi.Core.resources.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\Wolfi.Core.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\Wolfi.Core.Properties.Resources.resources
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\Wolfi.Core.Properties.Resource.de.resources
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\Wolfi.Core.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\Wolfi.Core.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\Wolfi.Core.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\de\Wolfi.Core.resources.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\Wolfi.Core.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Core\obj\Release\netstandard2.1\Wolfi.Core.pdb

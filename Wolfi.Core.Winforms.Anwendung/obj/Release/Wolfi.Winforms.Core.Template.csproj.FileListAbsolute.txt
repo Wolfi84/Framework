@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\bin\Release\Wolfi.Tests.Winforms.Template.exe.config
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\bin\Release\Wolfi.Tests.Winforms.Template.exe
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\bin\Release\Wolfi.Tests.Winforms.Template.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\bin\Release\Wolfi.Core.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\bin\Release\Wolfi.Windows.Forms.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\bin\Release\Wolfi.Core.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\bin\Release\Wolfi.Windows.Forms.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\bin\Release\de\Wolfi.Core.resources.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\obj\Release\Wolfi.Winforms.Core.Template.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\obj\Release\Wolfi.Tests.Winforms.Template.Properties.Resources.resources
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\obj\Release\Wolfi.Winforms.Core.Template.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\obj\Release\Wolfi.Winforms.Core.Template.csproj.CopyComplete
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\obj\Release\Wolfi.Tests.Winforms.Template.exe
+C:\Users\Admin\source\repos\Framework\Wolfi.Winforms.Core.Template\Wolfi.Core.Winforms\obj\Release\Wolfi.Tests.Winforms.Template.pdb

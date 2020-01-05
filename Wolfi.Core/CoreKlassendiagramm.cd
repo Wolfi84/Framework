@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Infrastruktur">
+    <Position X="6.249" Y="1.04" Height="0.291" Width="7.49" />
+  </Comment>
+  <Comment CommentText="Geschäftsdienste">
+    <Position X="6.25" Y="8" Height="0.291" Width="7.335" />
+  </Comment>
+  <Comment CommentText="Generisch">
+    <Position X="14.747" Y="8.02" Height="0.291" Width="5.128" />
+  </Comment>
+  <Comment CommentText="Datendienste">
+    <Position X="14.727" Y="10.914" Height="0.291" Width="4.996" />
+  </Comment>
+  <Comment CommentText="Erweiterungen">
+    <Position X="14.692" Y="1.078" Height="0.291" Width="5.09" />
+  </Comment>
+  <Comment CommentText="Daten">
+    <Position X="14.751" Y="13.767" Height="0.291" Width="4.996" />
+  </Comment>
+  <Comment CommentText="Multithreading">
+    <Position X="14.751" Y="4.267" Height="0.291" Width="5.09" />
+  </Comment>
+  <Class Name="Wolfi.Core.Kontext.Anwendungskontext">
+    <Position X="6.25" Y="3.25" Width="2" />
+    <Members>
+      <Field Name="_AnwendungsdatenPfadLokal" Hidden="true" />
+      <Field Name="_AnwendungsdatenPfadRoaming" Hidden="true" />
+      <Field Name="_Anwendungspfad" Hidden="true" />
+      <Field Name="_Fenster" Hidden="true" />
+      <Field Name="_Sprachen" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IgAAAAAAQAEgEAAAAAUCAABAAABCAABEAAAAAAAAAAQ=</HashCode>
+      <FileName>Kontext\Anwendungskontext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Kontext.FehlerAufgetretenEventArgs">
+    <Position X="11.5" Y="2.5" Width="2" />
+    <Members>
+      <Field Name="_Ausnahme" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kontext\FehlerAufgetreten.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Generisch.XmlController&lt;T&gt;">
+    <Position X="16.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Generisch\XmlController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Fenster.FensterListe" Collapsed="true">
+    <Position X="14.75" Y="17.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Fenster\Fenster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Fenster.Fenster">
+    <Position X="14.75" Y="14.75" Width="2" />
+    <Members>
+      <Field Name="_Name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAGAAAAIAQAACAAAAAAiAAAAAAAAAA=</HashCode>
+      <FileName>Fenster\Fenster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Fenster.FensterManager">
+    <Position X="11.75" Y="8.75" Width="2" />
+    <Members>
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_Liste" Hidden="true" />
+      <Field Name="SM_CMONITORS" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAAQAAAEAAQAAAEEBAAAAAAAAAAAAAEgQAAAA=</HashCode>
+      <FileName>Fenster\FensterManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Sprachen.SprachenManager">
+    <Position X="9" Y="8.75" Width="2" />
+    <Members>
+      <Field Name="_AktuelleSprache" Hidden="true" />
+      <Field Name="_Controller" Hidden="true" />
+      <Field Name="_Liste" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAQAAAEAAQAAAAMAAAAAAAAAACAAACAAAAAA=</HashCode>
+      <FileName>Sprachen\SprachenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Sprachen.SprachenXmlController">
+    <Position X="17.75" Y="12" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Sprachen\SprachenXmlController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Sprachen.SpracheListe" Collapsed="true">
+    <Position X="17.75" Y="16.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Sprachen\Sprache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Sprachen.Sprache">
+    <Position X="17.75" Y="14.75" Width="2" />
+    <Members>
+      <Field Name="_Name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAgIAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sprachen\Sprache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Erweiterungen.AssemblyInfo">
+    <Position X="14.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAACAAAAAABAAAAAAAAQBAAAAAAAAAAAA=</HashCode>
+      <FileName>Erweiterungen\AssemblyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Erweiterungen.Werkzeug">
+    <Position X="17.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Erweiterungen\Werkzeug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Protokoll.ProtokollManager">
+    <Position X="6.25" Y="8.75" Width="2" />
+    <Members>
+      <Field Name="_FehlerPulsierend" Hidden="true" />
+      <Field Name="_FehlerPulsierendLäuft" Hidden="true" />
+      <Field Name="_FehlerVorhanden" Hidden="true" />
+      <Field Name="_Liste" Hidden="true" />
+      <Field Name="_MaximaleLängeProtokollTyp" Hidden="true" />
+      <Field Name="_Pfad" Hidden="true" />
+      <Field Name="_Rückrufe" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAAAACEAAAAAIEAAQAABEARAAAQAIAAAAACADAEAAEg=</HashCode>
+      <FileName>Protokoll\ProtokollManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Kontext.SchwacherMethodenVerweisListe">
+    <Position X="17.75" Y="5.25" Width="2" />
+    <Members>
+      <Field Name="_ToteRückrufe" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAACAAAAACAAICAAAA=</HashCode>
+      <FileName>Kontext\SchwacherMethondenVerweis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Kontext.SchwacherMethodenVerweis">
+    <Position X="15.25" Y="5.25" Width="2" />
+    <Members>
+      <Field Name="_Methode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAgAAA=</HashCode>
+      <FileName>Kontext\SchwacherMethondenVerweis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Kontext.Verlauf">
+    <Position X="9" Y="1.75" Width="2" />
+    <Members>
+      <Field Name="_VorwärtsPuffer" Hidden="true" />
+      <Field Name="_ZurückPuffer" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAIAACAABAAABAAQAIAABEAgQAAIAAAAAAAAAEgEAA=</HashCode>
+      <FileName>Kontext\Verlauf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Protokoll.ProtokollEintragListe" Collapsed="true">
+    <Position X="6.25" Y="16.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protokoll\Protokoll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Protokoll.ProtokollEintrag">
+    <Position X="6.25" Y="12.75" Width="2" />
+    <Members>
+      <Field Name="_ErstelltUm" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIIAAAAAAAAAAAAAAAAIAAAAAAACAAAAAA=</HashCode>
+      <FileName>Protokoll\Protokoll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolfi.Core.Fenster.FensterXmlController">
+    <Position X="15" Y="12" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fenster\FensterController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Wolfi.Core.Kontext.IAppKontext">
+    <Position X="6.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kontext\IAppKontext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Wolfi.Core.Protokoll.ProtokollEintragTyp">
+    <Position X="6.25" Y="14.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAAAAAAAQgAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protokoll\Protokoll.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Wolfi.Core.Kontext.FehlerAufgetretenEventHandler" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kontext\FehlerAufgetreten.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

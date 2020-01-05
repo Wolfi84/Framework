@@ -1,0 +1,982 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wolfi.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Wolfi.Core.Erweiterungen.AssemblyInfo">
+            <summary>
+            Stellt Erweiterungsmethoden zum Abrufen
+            der AssemblyInfo Attribute bereit.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Erweiterungen.AssemblyInfo.HoleFirmenname(System.Object)">
+            <summary>
+            Gibt die Einstellung des 
+            System.Reflection.AssemblyCompanyAttributes 
+            der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="M:Wolfi.Core.Erweiterungen.AssemblyInfo.HoleProdukt(System.Object)">
+            <summary>
+            Gibt die Einstellung des 
+            System.Reflection.AssemblyProductAttributes 
+            der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="M:Wolfi.Core.Erweiterungen.AssemblyInfo.HoleVersion(System.Object)">
+            <summary>
+            Gibt die Haupt- und Nebenversion der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="M:Wolfi.Core.Erweiterungen.AssemblyInfo.HoleTitel(System.Object)">
+            <summary>
+            Gibt die Einstellung des 
+            System.Reflection.AssemblyTitleAttributes 
+            der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="M:Wolfi.Core.Erweiterungen.AssemblyInfo.HoleCopyright(System.Object)">
+            <summary>
+            Gibt die Einstellung des 
+            System.Reflection.AssemblyCopyrightAttributes 
+            der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="T:Wolfi.Core.Erweiterungen.Werkzeug">
+            <summary>
+            Stellt diverse Erweiterungsmethoden bereit.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Erweiterungen.Werkzeug.HoleLokalisiertenPfad(System.String)">
+            <summary>
+            Prüft, ob im Pfad ein Unterordner für die
+            aktuelle Kultur existiert und hängt diesen
+            an den Pfad an und gibt das Ergebnis zurück.
+            </summary>
+            <param name="pfad">Verzeichnis, in dem geprüft 
+            werden soll, ob ein lokalisierter Unterordner existiert.</param>
+            <remarks>Es kann nicht davon ausgegangen werden,
+            dass der Pfad existiert.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Erweiterungen.Werkzeug.ErzeugePfad(System.String,System.String)">
+            <summary>
+            Gibt eine absolute Pfadangabe zurück.
+            </summary>
+            <param name="endeTeil">Eine relative Pfadangabe</param>
+            <param name="basisTeil">Der absolute Pfad, mit dem der Pfad beginnen soll.</param>
+            <returns>Eine absolute Pfadangabe bestehend aus Basis- und Endeteil.</returns>
+        </member>
+        <member name="T:Wolfi.Core.Fenster.FensterListe">
+            <summary>
+            Stellt eine Liste von Anwendungsfenstern bereit.
+            </summary>
+            <remarks>Hier wird eine generische Liste vom .Net
+            für "Fenster"-Objekte "typisiert.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Fenster.FensterListe.Suchen(System.String)">
+            <summary>
+            Gibt das Fenster mit dem gesuchten Namen zurück.
+            </summary>
+            <param name="name">Bezeichnung des Fensters.</param>
+            <returns>Null, falls das Fenster nicht exisitert.</returns>
+            <remarks>Demonstriert den Einsatz anonymer Methoden.</remarks>
+        </member>
+        <member name="T:Wolfi.Core.Fenster.Fenster">
+            <summary>
+            Stellt Information über ein Anwendungsfenster bereit.
+            </summary>
+            <remarks>Hier handelt es sich um ein Datentransferobjekt.</remarks>
+        </member>
+        <member name="F:Wolfi.Core.Fenster.Fenster._Name">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.Fenster.Name">
+            <summary>
+            Ruft die Bezeichnung des Fensters
+            ab oder legt diese fest.
+            </summary>
+            <remarks>Wird als Schlüssel zum Wiederfinden benutzt.</remarks>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.Fenster.Zustand">
+            <summary>
+            Ruft den Zustand des Fensters ab
+            oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.Fenster.Links">
+            <summary>
+            Ruft die linke Fensterposition ab 
+            oder legt diese fest.
+            </summary>
+            <remarks>Standardwert null</remarks>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.Fenster.Oben">
+            <summary>
+            Ruft die obere Fensterposition ab
+            oder legt diese fest.
+            </summary>
+            <remarks>Standardwert null</remarks>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.Fenster.Breite">
+            <summary>
+            Ruft die Breite des Fensters ab
+            oder legt diese fest.
+            </summary>
+            <remarks>Standardwert null</remarks>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.Fenster.Höhe">
+            <summary>
+            Ruft die Höhe des Fensters ab
+            oder legt diese fest.
+            </summary>
+            <remarks>Standardwert null</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Fenster.Fenster.ToString">
+            <summary>
+            Gibt eine Zeichenfolge zurück, die dieses Fenster beschreibt.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Fenster.FensterManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten der
+            Größen und Positionen der Anwendungsfenster bereit.
+            </summary>
+            <remarks>Die Manager müssen "stabil, robust" implementiert
+            werden. Hier dürfen keine Ausnahmen auftreten!</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Fenster.FensterManager.GetSystemMetrics(System.Int32)">
+            <summary>
+            Gibt Informationen über die Bildschirmumgebung zurück.
+            </summary>
+            <param name="nIndex">Code der benötigten Information</param>
+        </member>
+        <member name="F:Wolfi.Core.Fenster.FensterManager.SM_CMONITORS">
+            <summary>
+            Für GetSystemMetrics zum Abrufen
+            der aktuellen Monitoranzahl.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Fenster.FensterManager._Controller">
+            <summary>
+            Interne Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.FensterManager.Controller">
+            <summary>
+            Ruft den Dienst zum Schreiben und Lesen
+            der Fensterdaten aus einer Xml Datei ab.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Fenster.FensterManager._Liste">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.FensterManager.Liste">
+            <summary>
+            Ruft die Liste mit den 
+            verwalteten Fenstern ab.
+            </summary>
+            <remarks>Beim ersten Benutzen wird
+            versucht, die Liste aus dem Standardpfad
+            wiederherzustellen.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Fenster.FensterManager.Speichern">
+            <summary>
+            Speichert die Fensterdaten als Xml Datei.
+            </summary>
+            <remarks>Es wird der StandardPfad benutzt.</remarks>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.FensterManager.StandardPfad">
+            <summary>
+            Ruft den vollständigen Pfad der Datei,
+            die zum Speichern der Fensterpositionen
+            benutzt wird, ab.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Fenster.FensterManager.Hinterlegen(Wolfi.Core.Fenster.Fenster)">
+            <summary>
+            Fügt das Fenster der Liste des Managers hinzu.
+            </summary>
+            <param name="fenster">Informationen zum Fenster</param>
+            <remarks>Der Fenstername wird als Schlüssel zum Wiederfinden benutzt.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Fenster.FensterManager.Abrufen(System.String)">
+            <summary>
+            Gibt das Objekt mit den Positionsdaten für ein Fenster zurück.
+            </summary>
+            <param name="fensterName">Name des Fensters, dessen Positionsdaten benötigt werden.</param>
+            <returns>Null, falls das Fenster nicht existiert.</returns>
+        </member>
+        <member name="P:Wolfi.Core.Fenster.FensterManager.MonitorSchlüssel">
+            <summary>
+            Ruft einen Schlüssel zum Unterscheiden
+            der Monitorkonfiguration ab.
+            </summary>
+            <remarks>Eine Änderung der Auflösung wird nicht berücksichtigt.</remarks>
+        </member>
+        <member name="T:Wolfi.Core.Generisch.XmlController`1">
+            <summary>
+            Stellt einen Dienst zum Speichern und Lesen
+            von Auflistungen in und aus einer 
+            Xml-Datei bereit.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Generisch.XmlController`1.Speichern(System.String,`0)">
+            <summary>
+            Schreibt die Daten im Xml Format
+            in die angegebene Datei.
+            </summary>
+            <param name="pfad">Vollständiger Name der Datei,
+            die benutzt werden soll.</param>
+            <param name="daten">Die Liste mit den Informationen,
+            die als Xml gespeichert werden sollen.</param>
+            <exception cref="T:System.Exception">Wird ausgelöst,
+            wenn das Speichern nicht erfolgreich war.</exception>
+        </member>
+        <member name="M:Wolfi.Core.Generisch.XmlController`1.Lesen(System.String)">
+            <summary>
+            Gibt die Daten aus der Xml Datei zurück.
+            </summary>
+            <param name="pfad">Vollständiger Name der Datei,
+            die benutzt werden soll.</param>
+            <exception cref="T:System.Exception">Wird ausgelöst, wenn
+            das Lesen nicht erfolgreich ist.</exception>
+        </member>
+        <member name="T:Wolfi.Core.Kontext.Anwendungskontext">
+            <summary>
+            Stellt die Infrastruktur für eine Anwendung bereit.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungskontext._Fenster">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungskontext.Fenster">
+            <summary>
+            Ruft den Dienst zum Verwalten der 
+            Anwendungsfenster ab.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Anwendungskontext.Erzeuge``1">
+            <summary>
+            Gibt ein initialisiertes Anwendungsobjekt zurück.
+            </summary>
+            <typeparam name="T">Der Anwendungstyp, der benötigt wird.</typeparam>
+            <returns>Ein Objekt, wo die AppKontext Eigenschaft
+            bereits voreingestellt ist und weitere Vorbereitungen getroffen wurden.</returns>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungskontext._Sprachen">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungskontext.Sprachen">
+            <summary>
+            Ruft den Dienst zum Verwalten der
+            Anwendungssprachen ab.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungskontext._AnwendungsdatenPfadLokal">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungskontext.AnwendungsdatenPfadLokal">
+            <summary>
+            Ruft das lokale Datenverzeichnis für
+            die Anwendung im Benutzerprofil ab.
+            Appdata.Local
+            </summary>
+            <remarks>Es ist sichergestellt, dass das 
+            Verzeichnis exisitert.</remarks>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungskontext._AnwendungsdatenPfadRoaming">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungskontext.AnwendungsdatenPfadRoaming">
+            <summary>
+            Ruft das Datenverzeichnis für
+            die Anwendung im Benutzerprofil ab.
+            Appdata.Roaming
+            </summary>
+            <remarks>Es ist sichergestellt, dass das 
+            Verzeichnis exisitert.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Anwendungskontext.Herunterfahren">
+            <summary>
+            Beendet den Infrastrukturdienst.
+            </summary>
+            <remarks>Speichert die Fensterpositon</remarks>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungskontext._Anwendungspfad">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+            <remarks>Die Anwendung kann nur genau 
+            eine Anwendungsverzeichnis besitzen, deshalb "statisch".</remarks>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungskontext.Anwendungspfad">
+            <summary>
+            Ruft das Verzeichnis ab, aus dem die Anwendung gestartet wurde.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungskontext._Protokoll">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungskontext.Protokoll">
+            <summary>
+            Ruft den Dienst zum Verwalten des
+            Anwendungsprotokolls ab.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungskontext._Zufallsgenerator">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungskontext.Zufallsgenerator">
+            <summary>
+            Ruft den Zufallsgenerator der Anwendung ab.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Kontext.Anwendungsobjekt">
+            <summary>
+            Basisobjekt einer Anwendung
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungsobjekt.AppKontext">
+            <summary>
+            Ruft das Infrastrukturobjekt ab oder legt dieses fest.
+            </summary>
+        </member>
+        <member name="E:Wolfi.Core.Kontext.Anwendungsobjekt.FehlerAufgetreten">
+            <summary>
+            Wird ausgelöst, wenn eine Ausnahme 
+            in der Anwendung aufgetreten ist.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Anwendungsobjekt.OnFehlerAufgetreten(Wolfi.Core.Kontext.FehlerAufgetretenEventArgs)">
+            <summary>
+            Löst das Ereignis FehlerAufgetreten aus.
+            </summary>
+            <param name="e">Das Objekt mit den Ereignisdaten</param>
+        </member>
+        <member name="E:Wolfi.Core.Kontext.Anwendungsobjekt.PropertyChanged">
+            <summary>
+            Wird ausgelöst, wenn sich der Inhalt einer
+            Eigenschaft geändert hat.
+            </summary>
+            <remarks>Notwendig für die WPF Datenbindung.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Anwendungsobjekt.OnPropertyChanged(System.String)">
+            <summary>
+            Löst das Ereignis PropertyChanged aus.
+            </summary>
+            <param name="name">Die Bezeichnung der Eigenschaft,
+            deren Inhalt geändert wurde.</param>
+            <remarks>Eine fehlende name-Einstellung wird mit dem
+            Aufrufernamen voreingestellt.</remarks>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungsobjekt._BinBeschäftigtEbene">
+            <summary>
+            Wird vom AktiviereBeschäftigt erhöht
+            und vom DeaktivereBeschäftigt vermindert.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Anwendungsobjekt.AktiviereBeschäftigt(System.String)">
+            <summary>
+            Schreibt in das Protokoll, dass eine
+            Methode zu laufen beginnt...
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Anwendungsobjekt.DeaktiviereBeschäftigt(System.String)">
+            <summary>
+            Schreibt in das Protokoll, dass eine
+            Methode beendet ist.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Anwendungsobjekt._BinBeschäftigt">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungsobjekt.BinBeschäftigt">
+            <summary>
+            Ruft einen Wahrheitswert ab,
+            der angibt, ob die Anwendung gerade arbeitet,
+            oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Kontext.FehlerAufgetretenEventHandler">
+            <summary>
+            Stellt die Methode dar, die das FehlerAufgetreten Ereignis behandeln
+            </summary>
+            <param name="sender">Bei Ereignisbehandlern immer der erste Parameter.</param>
+            <param name="e">Bei Ereignisbehandlern immer der zweite Parameter</param>
+            <remarks>Bei eigenen Ereignissen mit Daten der zweite Schritt.</remarks>
+        </member>
+        <member name="T:Wolfi.Core.Kontext.FehlerAufgetretenEventArgs">
+            <summary>
+            Stellt die Daten für das FehlerAufgetreten Ereignis bereit.
+            </summary>
+            <remarks>Bei eigenen Ereignissen mit Daten der erste Schritt.</remarks>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.FehlerAufgetretenEventArgs._Ausnahme">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.FehlerAufgetretenEventArgs.Ausnahme">
+            <summary>
+            Ruft die Ursache des Fehlers ab.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.FehlerAufgetretenEventArgs.#ctor(System.Exception)">
+            <summary>
+            Initialisiert ein neues FehlerAufgetretenEventArgs Objekt.
+            </summary>
+            <param name="ausnahme">Die Ursache des Fehlers</param>
+        </member>
+        <member name="T:Wolfi.Core.Kontext.IAppKontext">
+            <summary>
+            Bestätigt, dass das Objekt die Infrastruktur bereitstellt.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.IAppKontext.AppKontext">
+            <summary>
+            Ruft das Infrastruktur Objekt ab oder liegt dieses fest.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Kontext.SchwacherMethodenVerweisListe">
+            <summary>
+            Stellt eine Auflistung von SchwacherMethodenVerweis-Objekten bereit.
+            </summary>
+        </member>
+        <member name="E:Wolfi.Core.Kontext.SchwacherMethodenVerweisListe.NichtStornierteRückrufe">
+            <summary>
+            Wird ausgelöst, wenn Rückrufmethoden automatisch
+            gelöscht wurden, weil der Besitzer nicht mehr existiert.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.SchwacherMethodenVerweisListe.OnNichtStornierteRückrufe">
+            <summary>
+            Löst das NichtStornierteRückrufe Ereignis aus.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.SchwacherMethodenVerweisListe._ToteRückrufe">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.SchwacherMethodenVerweisListe.ToteRückrufe">
+            <summary>
+            Ruft die Liste mit den Einträgen ab,
+            der Besitzer nicht mehr vorhanden ist.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.SchwacherMethodenVerweisListe.AlleAusführen">
+            <summary>
+            Ruft alle hinterlegen Methoden auf.
+            </summary>
+            <remarks>Methoden, deren Besiter nicht
+            mehr vorhanden ist, werden automatisch
+            entfern.</remarks>
+        </member>
+        <member name="T:Wolfi.Core.Kontext.SchwacherMethodenVerweis">
+            <summary>
+            Kapselt eine Methode ohne die 
+            Garbage Collection davon abzuhalten,
+            den Besitzer zu entfernen.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.SchwacherMethodenVerweis._Methode">
+            <summary>
+            Internes Feld zum Kapseln der Methode
+            ohne die Garbage Collection an der Freigabe zu hindern.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.SchwacherMethodenVerweis.#ctor(System.Action)">
+            <summary>
+            Initialisiert ein neues Objekt.
+            </summary>
+            <param name="methode">Ein Delegate, der in diesem
+            Objekt gekapselt werden soll, ohne die Garbage Collection zu blockieren.</param>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.SchwacherMethodenVerweis.AufrufDelegate">
+            <summary>
+            Ruft die Methode ab, die in
+            diesem Objekt gekapselt ist.
+            </summary>
+            <remarks>null, falls der Besitzer nicht mehr lebt.</remarks>
+        </member>
+        <member name="T:Wolfi.Core.Kontext.Verlauf">
+            <summary>
+            Stellt einen Dienst zum 
+            Zurück- und Vorwärtswechseln bereit.
+            </summary>
+        </member>
+        <member name="E:Wolfi.Core.Kontext.Verlauf.KeinZurück">
+            <summary>
+            Wird ausgelöst, wenn kein Zurückgehen möglich ist
+            </summary>
+        </member>
+        <member name="E:Wolfi.Core.Kontext.Verlauf.KeinVorwärts">
+            <summary>
+            Wird ausgelöst, wenn kein Vorwärtsgehen möglich ist
+            </summary>
+        </member>
+        <member name="E:Wolfi.Core.Kontext.Verlauf.ZurückMöglich">
+            <summary>
+            Wird ausgelöst, wenn Zurückgehen möglich ist
+            </summary>
+        </member>
+        <member name="E:Wolfi.Core.Kontext.Verlauf.VorwärtsMöglich">
+            <summary>
+            Wird ausgelöst, wenn Vorwärtsgehen möglich ist
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Verlauf.OnKeinZurück">
+            <summary>
+            Löst das Ereignis KeinZurück aus.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Verlauf.OnKeinVorwärts">
+            <summary>
+            Löst das Ereignis KeinVorwärts aus.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Verlauf.OnZurückMöglich">
+            <summary>
+            Löst das Ereignis ZurückMöglich aus.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Verlauf.OnVorwärtsMöglich">
+            <summary>
+            Löst das Ereignis VorwärtsMöglich aus.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Verlauf._ZurückPuffer">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Kontext.Verlauf._VorwärtsPuffer">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Verlauf.ZurückPuffer">
+            <summary>
+            Ruft die Liste mit den Objekten, zu denen
+            Zurückgewechselt werden kann, ab.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Kontext.Verlauf.VorwärtsPuffer">
+            <summary>
+            Ruft die Liste mit den Objekten, zu denen
+            Vorwärtsgewechselt werden kann, ab.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Verlauf.Hinterlegen(System.Object)">
+            <summary>
+            Fügt dem Verlauf ein neues Objekt hinzu.
+            </summary>
+            <param name="element">Das Objekt, das dem
+            Verlauf hinzugefügt werden soll.</param>
+            <remarks>Der Vorwärtspuffer wird dabei geleert.
+            Sollten im Zurückpuffer mehr als Element enthalten
+            sein, wird das ZurückMöglich Ereignis ausgelöst.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Verlauf.HoleZurückObjekt">
+            <summary>
+            Fügt das aktuelle Objekt des Zurückpuffers
+            in den Vorwärtspuffer und gibt 
+            das darunterliegende Objekt zurück.
+            </summary>
+            <remarks>Dabei wird das VorwärtsMöglich Ereignis
+            ausgelöst. Sollte sich im Zurückpuffer nur mehr
+            ein Objekt befinden, das KeinZurück Ereignis.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Kontext.Verlauf.HoleVorwärtsObjekt">
+            <summary>
+            Stellt das oberste Element des Vorwärtspuffers
+            in den Rückwärtspuffer und gibt es zurück.
+            </summary>
+            <remarks>Sollte der Vorwärtspuffer leer sein,
+            wird das Ereignis KeinVorwärts ausgelöst. Sollten
+            sich im Rückwärtspuffer mehr als ein Objekt
+            befinden, wird ZurückMöglich ausgelöst.</remarks>
+        </member>
+        <member name="T:Wolfi.Core.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Properties.Resources.Sprachen">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;sprachen&gt;
+              &lt;sprache code=&quot;en&quot; name=&quot;English&quot;/&gt;
+              &lt;sprache code=&quot;de&quot; name=&quot;German&quot;/&gt;
+            &lt;/sprachen&gt; ähnelt.
+             </summary>
+        </member>
+        <member name="T:Wolfi.Core.Protokoll.ProtokollEintragTyp">
+            <summary>
+            Listet unterschiedliche
+            Varianten von Protokolleinträgen auf.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollEintragTyp.Normal">
+            <summary>
+            Kennzeichnet einen Hinweis im Protkoll.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollEintragTyp.NeueInstanz">
+            <summary>
+            Kennzeichnet einen Eintrag,
+            der auf ein neues Objekt hinweist.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollEintragTyp.Warnung">
+            <summary>
+            Kennzeichnet einen Eintrag, der
+            beachtet werden soll.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollEintragTyp.Fehler">
+            <summary>
+            Kennzeichnet einen Eintrag
+            wegen einer Ausnahme.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollEintragTyp.Beschäftigt">
+            <summary>
+            Kennzeichnet einen Eintrag,
+            wenn die Anwendung eine Arbeit beginnt
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Protokoll.ProtokollEintragListe">
+            <summary>
+            Stellt eine Liste von Protokolleinträgen bereit.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Protokoll.ProtokollEintrag">
+            <summary>
+            Beschreibt eine Protokollzeile.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollEintrag._ErstelltUm">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollEintrag.ErstelltUm">
+            <summary>
+            Ruft den Zeitpunkt ab, zu dem
+            der Eintrag erstellt wurde, oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollEintrag.Typ">
+            <summary>
+            Ruft die Art des Eintrags ab
+            oder legt diese fest.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollEintrag.Text">
+            <summary>
+            Ruft den Informationstext des
+            Eintrags ab oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Protokoll.ProtokollManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten eines
+            Anwendungsprotokolls bereit.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollManager._Liste">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollManager.Liste">
+            <summary>
+            Ruft die Protokolleinträge ab.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Protokoll.ProtokollManager.Eintragen(System.String)">
+            <summary>
+            Fügt dem Protokoll einen normalen Eintrag hinzu.
+            </summary>
+            <param name="text">Die Information, die im Protokoll stehen soll.</param>
+        </member>
+        <member name="M:Wolfi.Core.Protokoll.ProtokollManager.Eintragen(System.String,Wolfi.Core.Protokoll.ProtokollEintragTyp)">
+            <summary>
+            Fügt dem Protokoll einen Eintrag hinzu.
+            </summary>
+            <param name="text">Die Information, die im Protokoll stehen soll.</param>
+            <param name="typ">Die Art des Eintrags.</param>
+        </member>
+        <member name="M:Wolfi.Core.Protokoll.ProtokollManager.Eintragen(Wolfi.Core.Protokoll.ProtokollEintrag)">
+            <summary>
+            Fügt dem Protokoll einen Eintrag hinzu.
+            </summary>
+            <param name="zeile">Der Protokolleintrag, der erstellt werden soll.</param>
+            <remarks>Die Threadsicherheit ist nicht gewährleistet.</remarks>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollManager._Rückrufe">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollManager.Rückrufe">
+            <summary>
+            Ruft die Liste zum Sammeln der abonnierten
+            Rückmethoden ab.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Protokoll.ProtokollManager.AbonniereRückruf(System.Action)">
+            <summary>
+            Bittet den ProtokollManager bei einem
+            neuen Eintrag die angegebene Methode auszuführen.
+            </summary>
+            <param name="rückrufMethode">Die Methode, die 
+            bei einem neuen Protokoll aufgerufen werden soll.</param>
+        </member>
+        <member name="M:Wolfi.Core.Protokoll.ProtokollManager.StorniereRückruf(System.Action)">
+            <summary>
+            Bittet den ProtokollManager die angegebene Methode 
+            nicht mehr auszuführen.
+            </summary>
+            <param name="rückrufMethode">Die Methode, die 
+            nicht mehr aufgerufen werden soll.</param>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollManager._FehlerVorhanden">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollManager.FehlerVorhanden">
+            <summary>
+            Ruft einen Wahrheitswert ab,
+            ob im Protokoll ein unbestätigter
+            Fehler vorhanden oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollManager._FehlerPulsierend">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollManager.FehlerPulsierend">
+            <summary>
+            Ruft einen pulisierenden Wahrheitswert
+            ab, wenn ein unbestätigter Fehler im
+            Protokoll vorhanden ist.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollManager._FehlerPulsierendLäuft">
+            <summary>
+            Interes Hilfsfeld für die Methode, die
+            in einem eigenen Thread FehlerPulsierend berechnet.
+            </summary>
+            <remarks>Solche Methoden heißen "Asynchron"</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Protokoll.ProtokollManager.FehlerPulsierenAsync">
+            <summary>
+            Wechselt im Intervall von einer 1/2 Sekunde
+            FehlerPulsierend von True auf False
+            solange unbestätigte Fehler vorhanden sind.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollManager._Pfad">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollManager.Pfad">
+            <summary>
+            Ruft den vollständigten Dateinamen
+            der Protokolldatei ab, die zum Speichern
+            eines neuen Eintrags benutzt werden soll,
+            oder legt diesen fest.
+            </summary>
+            <remarks>Sollen die Protkolleinträge nicht
+            gespeichert, die Einstellung leer lassen.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Protokoll.ProtokollManager.Speichern(Wolfi.Core.Protokoll.ProtokollEintrag)">
+            <summary>
+            Schreibt den Inhalt des Eintrags in
+            die im Pfad angegebene Textdatei.
+            </summary>
+            <param name="eintrag">Protokolleintrag, der gespeichert werden soll.</param>
+            <remarks>Sollten beim Speichern 10mal Fehler auftreten,
+            wird die Funktion automatisch deaktiviert.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Protokoll.ProtokollManager.Zusammenräumen(System.Int32)">
+            <summary>
+            Komprimiert das aktuelle Protkoll und
+            erstellt ein neues.
+            </summary>
+            <param name="maxGenerationen">Die Anzahl der
+            aufzubewahrenden alten Protokolle in den Zips.</param>
+        </member>
+        <member name="F:Wolfi.Core.Protokoll.ProtokollManager._MaximaleLängeProtokollTyp">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Protokoll.ProtokollManager.MaximaleLängeProtokollTyp">
+            <summary>
+            Ruft die Anzahl der Zeichen des
+            längsten ProtkollEintragTyp-Eintrags ab.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Sprachen.SpracheListe">
+            <summary>
+            Stellt eine Liste von Anwendungssprachen bereit.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Sprachen.SpracheListe.Suchen(System.String)">
+            <summary>
+            Gibt die Sprache mit dem Microsoft Code zurück.
+            </summary>
+            <param name="code">Microsoft Code der Sprache, die gesucht wird.</param>
+            <returns>Null, falls die Sprache nicht vorhanden ist.</returns>
+            <remarks>Die Groß-/Kleinschreibung wird ignoriert.</remarks>
+        </member>
+        <member name="T:Wolfi.Core.Sprachen.Sprache">
+            <summary>
+            Stellt Information über eine
+            Anwendungssprache bereit.
+            </summary>
+            <remarks>Eine Liste aller Codes 
+            ist unter https://msdn.microsoft.com/en-us/library/cc233982.aspx zu finden.</remarks>
+        </member>
+        <member name="P:Wolfi.Core.Sprachen.Sprache.Code">
+            <summary>
+            Ruft den Microsoft Schlüssel der 
+            Sprache ab oder legt diesen fest.
+            </summary>
+            <remarks>Standardwert ist null.</remarks>
+        </member>
+        <member name="F:Wolfi.Core.Sprachen.Sprache._Name">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Sprachen.Sprache.Name">
+            <summary>
+            Ruft die lesbare Bezeichnung der
+            Sprache ab oder legt diese fest.
+            </summary>
+            <remarks>Standardwert: ein Leerstring</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Sprachen.Sprache.ToString">
+            <summary>
+            Gibt eine Zeichenfolge zurück, die diese Sprache darstellt.
+            </summary>
+            <remarks>Nie auf das ToString() verlassen. Wird von
+            fast allen Klassen überschrieben. Nur bei Werttypen
+            bekommt man die Zahl als Text.</remarks>
+        </member>
+        <member name="T:Wolfi.Core.Sprachen.SprachenManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten der Anwendungssprachen bereit.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Sprachen.SprachenManager._Controller">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Sprachen.SprachenManager.Controller">
+            <summary>
+            Ruft den Dienst zum Verwalten der
+            externen Sprachen ab.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Sprachen.SprachenManager._Liste">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Sprachen.SprachenManager.Liste">
+            <summary>
+            Ruft die unterstützten Sprachen der Anwendung ab.
+            </summary>
+        </member>
+        <member name="F:Wolfi.Core.Sprachen.SprachenManager._AktuelleSprache">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Wolfi.Core.Sprachen.SprachenManager.AktuelleSprache">
+            <summary>
+            Ruft die derzeitige Anwendungssprache
+            ab oder legt diese fest.
+            </summary>
+            <remarks>Als Standard wird die erste Sprache
+            der Liste benutzt.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Sprachen.SprachenManager.Festlegen(System.String)">
+            <summary>
+            Setzt die aktuelle Sprache auf die
+            Sprache mit dem angegeben Code.
+            </summary>
+            <param name="code">Microsoft Kürzel der Sprache,
+            die zur aktuellen Sprache werden soll.</param>
+            <remarks>Wird die Sprache nicht gefunden,
+            wird die erste Sprache der Liste benutzt.
+            Die Groß-/Kleinschreibung beim Suchen wird
+            nicht berücksichtigt.</remarks>
+        </member>
+        <member name="M:Wolfi.Core.Sprachen.SprachenManager.Aktualisieren">
+            <summary>
+            Stellt sicher, dass aktuelle Daten geliefert werden.
+            </summary>
+        </member>
+        <member name="T:Wolfi.Core.Sprachen.SprachenXmlController">
+            <summary>
+            Stellt einen Dienst zum Lesen und Schreiben
+            von Anwendungssprachen aus bzw. in eine Xml Datei bereit.
+            </summary>
+        </member>
+        <member name="M:Wolfi.Core.Sprachen.SprachenXmlController.HoleStandardsprachen">
+            <summary>
+            Gibt die Sprachen aus den Ressourcen zurück.
+            </summary>
+        </member>
+    </members>
+</doc>

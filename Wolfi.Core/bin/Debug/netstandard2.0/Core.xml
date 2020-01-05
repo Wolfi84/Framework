@@ -1,0 +1,641 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Core</name>
+    </assembly>
+    <members>
+        <member name="T:Core.Erweiterungen.AssemblyInfo">
+            <summary>
+            Stellt Erweiterungsmethoden zum Abrufen
+            der AssemblyInfo Attribute bereit.
+            </summary>
+        </member>
+        <member name="M:Core.Erweiterungen.AssemblyInfo.HoleFirmenname(System.Object)">
+            <summary>
+            Gibt die Einstellung des 
+            System.Reflection.AssemblyCompanyAttributes 
+            der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="M:Core.Erweiterungen.AssemblyInfo.HoleProdukt(System.Object)">
+            <summary>
+            Gibt die Einstellung des 
+            System.Reflection.AssemblyProductAttributes 
+            der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="M:Core.Erweiterungen.AssemblyInfo.HoleVersion(System.Object)">
+            <summary>
+            Gibt die Haupt- und Nebenversion der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="M:Core.Erweiterungen.AssemblyInfo.HoleTitel(System.Object)">
+            <summary>
+            Gibt die Einstellung des 
+            System.Reflection.AssemblyTitleAttributes 
+            der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="M:Core.Erweiterungen.AssemblyInfo.HoleCopyright(System.Object)">
+            <summary>
+            Gibt die Einstellung des 
+            System.Reflection.AssemblyCopyrightAttributes 
+            der Hauptassembly zurück.
+            </summary>
+            <param name="aktuellesObjekt">Verweis auf das Objekt, für
+            das diese Erweiterung benutzt wird.</param>
+        </member>
+        <member name="T:Core.Erweiterungen.Werkzeug">
+            <summary>
+            Stellt diverse Erweiterungsmethoden bereit.
+            </summary>
+        </member>
+        <member name="M:Core.Erweiterungen.Werkzeug.HoleLokalisiertenPfad(System.String)">
+            <summary>
+            Prüft, ob im Pfad ein Unterordner für die
+            aktuelle Kultur existiert und hängt diesen
+            an den Pfad an und gibt das Ergebnis zurück.
+            </summary>
+            <param name="pfad">Verzeichnis, in dem geprüft 
+            werden soll, ob ein lokalisierter Unterordner existiert.</param>
+            <remarks>Es kann nicht davon ausgegangen werden,
+            dass der Pfad existiert.</remarks>
+        </member>
+        <member name="M:Core.Erweiterungen.Werkzeug.ErzeugePfad(System.String,System.String)">
+            <summary>
+            Gibt eine absolute Pfadangabe zurück.
+            </summary>
+            <param name="endeTeil">Eine relative Pfadangabe</param>
+            <param name="basisTeil">Der absolute Pfad, mit dem der Pfad beginnen soll.</param>
+            <returns>Eine absolute Pfadangabe bestehend aus Basis- und Endeteil.</returns>
+        </member>
+        <member name="T:Core.Fenster.FensterListe">
+            <summary>
+            Stellt eine Liste von Anwendungsfenstern bereit.
+            </summary>
+            <remarks>Hier wird eine generische Liste vom .Net
+            für "Fenster"-Objekte "typisiert.</remarks>
+        </member>
+        <member name="M:Core.Fenster.FensterListe.Suchen(System.String)">
+            <summary>
+            Gibt das Fenster mit dem gesuchten Namen zurück.
+            </summary>
+            <param name="name">Bezeichnung des Fensters.</param>
+            <returns>Null, falls das Fenster nicht exisitert.</returns>
+            <remarks>Demonstriert den Einsatz anonymer Methoden.</remarks>
+        </member>
+        <member name="T:Core.Fenster.Fenster">
+            <summary>
+            Stellt Information über ein Anwendungsfenster bereit.
+            </summary>
+            <remarks>Hier handelt es sich um ein Datentransferobjekt.</remarks>
+        </member>
+        <member name="F:Core.Fenster.Fenster._Name">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Core.Fenster.Fenster.Name">
+            <summary>
+            Ruft die Bezeichnung des Fensters
+            ab oder legt diese fest.
+            </summary>
+            <remarks>Wird als Schlüssel zum Wiederfinden benutzt.</remarks>
+        </member>
+        <member name="P:Core.Fenster.Fenster.Zustand">
+            <summary>
+            Ruft den Zustand des Fensters ab
+            oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="P:Core.Fenster.Fenster.Links">
+            <summary>
+            Ruft die linke Fensterposition ab 
+            oder legt diese fest.
+            </summary>
+            <remarks>Standardwert null</remarks>
+        </member>
+        <member name="P:Core.Fenster.Fenster.Oben">
+            <summary>
+            Ruft die obere Fensterposition ab
+            oder legt diese fest.
+            </summary>
+            <remarks>Standardwert null</remarks>
+        </member>
+        <member name="P:Core.Fenster.Fenster.Breite">
+            <summary>
+            Ruft die Breite des Fensters ab
+            oder legt diese fest.
+            </summary>
+            <remarks>Standardwert null</remarks>
+        </member>
+        <member name="P:Core.Fenster.Fenster.Höhe">
+            <summary>
+            Ruft die Höhe des Fensters ab
+            oder legt diese fest.
+            </summary>
+            <remarks>Standardwert null</remarks>
+        </member>
+        <member name="M:Core.Fenster.Fenster.ToString">
+            <summary>
+            Gibt eine Zeichenfolge zurück, die dieses Fenster beschreibt.
+            </summary>
+        </member>
+        <member name="T:Core.Fenster.FensterManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten der
+            Größen und Positionen der Anwendungsfenster bereit.
+            </summary>
+            <remarks>Die Manager müssen "stabil, robust" implementiert
+            werden. Hier dürfen keine Ausnahmen auftreten!</remarks>
+        </member>
+        <member name="M:Core.Fenster.FensterManager.GetSystemMetrics(System.Int32)">
+            <summary>
+            Gibt Informationen über die Bildschirmumgebung zurück.
+            </summary>
+            <param name="nIndex">Code der benötigten Information</param>
+        </member>
+        <member name="F:Core.Fenster.FensterManager.SM_CMONITORS">
+            <summary>
+            Für GetSystemMetrics zum Abrufen
+            der aktuellen Monitoranzahl.
+            </summary>
+        </member>
+        <member name="F:Core.Fenster.FensterManager._Controller">
+            <summary>
+            Interne Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Fenster.FensterManager.Controller">
+            <summary>
+            Ruft den Dienst zum Schreiben und Lesen
+            der Fensterdaten aus einer Xml Datei ab.
+            </summary>
+        </member>
+        <member name="F:Core.Fenster.FensterManager._Liste">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Fenster.FensterManager.Liste">
+            <summary>
+            Ruft die Liste mit den 
+            verwalteten Fenstern ab.
+            </summary>
+            <remarks>Beim ersten Benutzen wird
+            versucht, die Liste aus dem Standardpfad
+            wiederherzustellen.</remarks>
+        </member>
+        <member name="M:Core.Fenster.FensterManager.Speichern">
+            <summary>
+            Speichert die Fensterdaten als Xml Datei.
+            </summary>
+            <remarks>Es wird der StandardPfad benutzt.</remarks>
+        </member>
+        <member name="P:Core.Fenster.FensterManager.StandardPfad">
+            <summary>
+            Ruft den vollständigen Pfad der Datei,
+            die zum Speichern der Fensterpositionen
+            benutzt wird, ab.
+            </summary>
+        </member>
+        <member name="M:Core.Fenster.FensterManager.Hinterlegen(Core.Fenster.Fenster)">
+            <summary>
+            Fügt das Fenster der Liste des Managers hinzu.
+            </summary>
+            <param name="fenster">Informationen zum Fenster</param>
+            <remarks>Der Fenstername wird als Schlüssel zum Wiederfinden benutzt.</remarks>
+        </member>
+        <member name="M:Core.Fenster.FensterManager.Abrufen(System.String)">
+            <summary>
+            Gibt das Objekt mit den Positionsdaten für ein Fenster zurück.
+            </summary>
+            <param name="fensterName">Name des Fensters, dessen Positionsdaten benötigt werden.</param>
+            <returns>Null, falls das Fenster nicht existiert.</returns>
+        </member>
+        <member name="P:Core.Fenster.FensterManager.MonitorSchlüssel">
+            <summary>
+            Ruft einen Schlüssel zum Unterscheiden
+            der Monitorkonfiguration ab.
+            </summary>
+            <remarks>Eine Änderung der Auflösung wird nicht berücksichtigt.</remarks>
+        </member>
+        <member name="T:Core.Generisch.XmlController`1">
+            <summary>
+            Stellt einen Dienst zum Speichern und Lesen
+            von Auflistungen in und aus einer 
+            Xml-Datei bereit.
+            </summary>
+        </member>
+        <member name="M:Core.Generisch.XmlController`1.Speichern(System.String,`0)">
+            <summary>
+            Schreibt die Daten im Xml Format
+            in die angegebene Datei.
+            </summary>
+            <param name="pfad">Vollständiger Name der Datei,
+            die benutzt werden soll.</param>
+            <param name="daten">Die Liste mit den Informationen,
+            die als Xml gespeichert werden sollen.</param>
+            <exception cref="T:System.Exception">Wird ausgelöst,
+            wenn das Speichern nicht erfolgreich war.</exception>
+        </member>
+        <member name="M:Core.Generisch.XmlController`1.Lesen(System.String)">
+            <summary>
+            Gibt die Daten aus der Xml Datei zurück.
+            </summary>
+            <param name="pfad">Vollständiger Name der Datei,
+            die benutzt werden soll.</param>
+            <exception cref="T:System.Exception">Wird ausgelöst, wenn
+            das Lesen nicht erfolgreich ist.</exception>
+        </member>
+        <member name="T:Core.Anwendungskontext">
+            <summary>
+            Stellt die Infrastruktur für eine Anwendung bereit.
+            </summary>
+        </member>
+        <member name="F:Core.Anwendungskontext._Fenster">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Anwendungskontext.Fenster">
+            <summary>
+            Ruft den Dienst zum Verwalten der 
+            Anwendungsfenster ab.
+            </summary>
+        </member>
+        <member name="M:Core.Anwendungskontext.Erzeuge``1">
+            <summary>
+            Gibt ein initialisiertes Anwendungsobjekt zurück.
+            </summary>
+            <typeparam name="T">Der Anwendungstyp, der benötigt wird.</typeparam>
+            <returns>Ein Objekt, wo die AppKontext Eigenschaft
+            bereits voreingestellt ist und weitere Vorbereitungen getroffen wurden.</returns>
+        </member>
+        <member name="F:Core.Anwendungskontext._Sprachen">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Anwendungskontext.Sprachen">
+            <summary>
+            Ruft den Dienst zum Verwalten der
+            Anwendungssprachen ab.
+            </summary>
+        </member>
+        <member name="F:Core.Anwendungskontext._AnwendungsdatenPfadLokal">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Anwendungskontext.AnwendungsdatenPfadLokal">
+            <summary>
+            Ruft das lokale Datenverzeichnis für
+            die Anwendung im Benutzerprofil ab.
+            Appdata.Local
+            </summary>
+            <remarks>Es ist sichergestellt, dass das 
+            Verzeichnis exisitert.</remarks>
+        </member>
+        <member name="F:Core.Anwendungskontext._AnwendungsdatenPfadRoaming">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Anwendungskontext.AnwendungsdatenPfadRoaming">
+            <summary>
+            Ruft das Datenverzeichnis für
+            die Anwendung im Benutzerprofil ab.
+            Appdata.Roaming
+            </summary>
+            <remarks>Es ist sichergestellt, dass das 
+            Verzeichnis exisitert.</remarks>
+        </member>
+        <member name="M:Core.Anwendungskontext.Herunterfahren">
+            <summary>
+            Beendet den Infrastrukturdienst.
+            </summary>
+            <remarks>Speichert die Fensterpositon</remarks>
+        </member>
+        <member name="F:Core.Anwendungskontext._Anwendungspfad">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+            <remarks>Die Anwendung kann nur genau 
+            eine Anwendungsverzeichnis besitzen, deshalb "statisch".</remarks>
+        </member>
+        <member name="P:Core.Anwendungskontext.Anwendungspfad">
+            <summary>
+            Ruft das Verzeichnis ab, aus dem die Anwendung gestartet wurde.
+            </summary>
+        </member>
+        <member name="T:Core.Anwendungsobjekt">
+            <summary>
+            Basisobjekt einer Anwendung
+            </summary>
+        </member>
+        <member name="P:Core.Anwendungsobjekt.AppKontext">
+            <summary>
+            Ruft das Infrastrukturobjekt ab oder legt dieses fest.
+            </summary>
+        </member>
+        <member name="E:Core.Anwendungsobjekt.FehlerAufgetreten">
+            <summary>
+            Wird ausgelöst, wenn eine Ausnahme 
+            in der Anwendung aufgetreten ist.
+            </summary>
+        </member>
+        <member name="M:Core.Anwendungsobjekt.OnFehlerAufgetreten(Core.FehlerAufgetretenEventArgs)">
+            <summary>
+            Löst das Ereignis FehlerAufgetreten aus.
+            </summary>
+            <param name="e">Das Objekt mit den Ereignisdaten</param>
+        </member>
+        <member name="T:Core.FehlerAufgetretenEventHandler">
+            <summary>
+            Stellt die Methode dar, die das FehlerAufgetreten Ereignis behandeln
+            </summary>
+            <param name="sender">Bei Ereignisbehandlern immer der erste Parameter.</param>
+            <param name="e">Bei Ereignisbehandlern immer der zweite Parameter</param>
+            <remarks>Bei eigenen Ereignissen mit Daten der zweite Schritt.</remarks>
+        </member>
+        <member name="T:Core.FehlerAufgetretenEventArgs">
+            <summary>
+            Stellt die Daten für das FehlerAufgetreten Ereignis bereit.
+            </summary>
+            <remarks>Bei eigenen Ereignissen mit Daten der erste Schritt.</remarks>
+        </member>
+        <member name="F:Core.FehlerAufgetretenEventArgs._Ausnahme">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.FehlerAufgetretenEventArgs.Ausnahme">
+            <summary>
+            Ruft die Ursache des Fehlers ab.
+            </summary>
+        </member>
+        <member name="M:Core.FehlerAufgetretenEventArgs.#ctor(System.Exception)">
+            <summary>
+            Initialisiert ein neues FehlerAufgetretenEventArgs Objekt.
+            </summary>
+            <param name="ausnahme">Die Ursache des Fehlers</param>
+        </member>
+        <member name="T:Core.IAppKontext">
+            <summary>
+            Bestätigt, dass das Objekt die Infrastruktur bereitstellt.
+            </summary>
+        </member>
+        <member name="P:Core.IAppKontext.AppKontext">
+            <summary>
+            Ruft das Infrastruktur Objekt ab oder liegt dieses fest.
+            </summary>
+        </member>
+        <member name="T:Core.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:Core.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:Core.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:Core.Properties.Resources.Sprachen">
+             <summary>
+               Sucht eine lokalisierte Zeichenfolge, die &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+            &lt;sprachen&gt;
+              &lt;sprache code=&quot;en&quot; name=&quot;English&quot;/&gt;
+              &lt;sprache code=&quot;de&quot; name=&quot;German&quot;/&gt;
+            &lt;/sprachen&gt; ähnelt.
+             </summary>
+        </member>
+        <member name="T:Core.Sprachen.SpracheListe">
+            <summary>
+            Stellt eine Liste von Anwendungssprachen bereit.
+            </summary>
+        </member>
+        <member name="M:Core.Sprachen.SpracheListe.Suchen(System.String)">
+            <summary>
+            Gibt die Sprache mit dem Microsoft Code zurück.
+            </summary>
+            <param name="code">Microsoft Code der Sprache, die gesucht wird.</param>
+            <returns>Null, falls die Sprache nicht vorhanden ist.</returns>
+            <remarks>Die Groß-/Kleinschreibung wird ignoriert.</remarks>
+        </member>
+        <member name="T:Core.Sprachen.Sprache">
+            <summary>
+            Stellt Information über eine
+            Anwendungssprache bereit.
+            </summary>
+            <remarks>Eine Liste aller Codes 
+            ist unter https://msdn.microsoft.com/en-us/library/cc233982.aspx zu finden.</remarks>
+        </member>
+        <member name="P:Core.Sprachen.Sprache.Code">
+            <summary>
+            Ruft den Microsoft Schlüssel der 
+            Sprache ab oder legt diesen fest.
+            </summary>
+            <remarks>Standardwert ist null.</remarks>
+        </member>
+        <member name="F:Core.Sprachen.Sprache._Name">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Sprachen.Sprache.Name">
+            <summary>
+            Ruft die lesbare Bezeichnung der
+            Sprache ab oder legt diese fest.
+            </summary>
+            <remarks>Standardwert: ein Leerstring</remarks>
+        </member>
+        <member name="M:Core.Sprachen.Sprache.ToString">
+            <summary>
+            Gibt eine Zeichenfolge zurück, die diese Sprache darstellt.
+            </summary>
+            <remarks>Nie auf das ToString() verlassen. Wird von
+            fast allen Klassen überschrieben. Nur bei Werttypen
+            bekommt man die Zahl als Text.</remarks>
+        </member>
+        <member name="T:Core.Sprachen.SprachenManager">
+            <summary>
+            Stellt einen Dienst zum Verwalten der Anwendungssprachen bereit.
+            </summary>
+        </member>
+        <member name="F:Core.Sprachen.SprachenManager._Controller">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Core.Sprachen.SprachenManager.Controller">
+            <summary>
+            Ruft den Dienst zum Verwalten der
+            externen Sprachen ab.
+            </summary>
+        </member>
+        <member name="F:Core.Sprachen.SprachenManager._Liste">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Sprachen.SprachenManager.Liste">
+            <summary>
+            Ruft die unterstützten Sprachen der Anwendung ab.
+            </summary>
+        </member>
+        <member name="F:Core.Sprachen.SprachenManager._AktuelleSprache">
+            <summary>
+            Internes Feld für die Eigenschaft.
+            </summary>
+        </member>
+        <member name="P:Core.Sprachen.SprachenManager.AktuelleSprache">
+            <summary>
+            Ruft die derzeitige Anwendungssprache
+            ab oder legt diese fest.
+            </summary>
+            <remarks>Als Standard wird die erste Sprache
+            der Liste benutzt.</remarks>
+        </member>
+        <member name="M:Core.Sprachen.SprachenManager.Festlegen(System.String)">
+            <summary>
+            Setzt die aktuelle Sprache auf die
+            Sprache mit dem angegeben Code.
+            </summary>
+            <param name="code">Microsoft Kürzel der Sprache,
+            die zur aktuellen Sprache werden soll.</param>
+            <remarks>Wird die Sprache nicht gefunden,
+            wird die erste Sprache der Liste benutzt.
+            Die Groß-/Kleinschreibung beim Suchen wird
+            nicht berücksichtigt.</remarks>
+        </member>
+        <member name="M:Core.Sprachen.SprachenManager.Aktualisieren">
+            <summary>
+            Stellt sicher, dass aktuelle Daten geliefert werden.
+            </summary>
+        </member>
+        <member name="T:Core.Sprachen.SprachenXmlController">
+            <summary>
+            Stellt einen Dienst zum Lesen und Schreiben
+            von Anwendungssprachen aus bzw. in eine Xml Datei bereit.
+            </summary>
+        </member>
+        <member name="M:Core.Sprachen.SprachenXmlController.HoleStandardsprachen">
+            <summary>
+            Gibt die Sprachen aus den Ressourcen zurück.
+            </summary>
+        </member>
+        <member name="T:Core.Verlauf">
+            <summary>
+            Stellt einen Dienst zum 
+            Zurück- und Vorwärtswechseln bereit.
+            </summary>
+        </member>
+        <member name="E:Core.Verlauf.KeinZurück">
+            <summary>
+            Wird ausgelöst, wenn kein Zurückgehen möglich ist
+            </summary>
+        </member>
+        <member name="E:Core.Verlauf.KeinVorwärts">
+            <summary>
+            Wird ausgelöst, wenn kein Vorwärtsgehen möglich ist
+            </summary>
+        </member>
+        <member name="E:Core.Verlauf.ZurückMöglich">
+            <summary>
+            Wird ausgelöst, wenn Zurückgehen möglich ist
+            </summary>
+        </member>
+        <member name="E:Core.Verlauf.VorwärtsMöglich">
+            <summary>
+            Wird ausgelöst, wenn Vorwärtsgehen möglich ist
+            </summary>
+        </member>
+        <member name="M:Core.Verlauf.OnKeinZurück">
+            <summary>
+            Löst das Ereignis KeinZurück aus.
+            </summary>
+        </member>
+        <member name="M:Core.Verlauf.OnKeinVorwärts">
+            <summary>
+            Löst das Ereignis KeinVorwärts aus.
+            </summary>
+        </member>
+        <member name="M:Core.Verlauf.OnZurückMöglich">
+            <summary>
+            Löst das Ereignis ZurückMöglich aus.
+            </summary>
+        </member>
+        <member name="M:Core.Verlauf.OnVorwärtsMöglich">
+            <summary>
+            Löst das Ereignis VorwärtsMöglich aus.
+            </summary>
+        </member>
+        <member name="F:Core.Verlauf._ZurückPuffer">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="F:Core.Verlauf._VorwärtsPuffer">
+            <summary>
+            Internes Feld für die Eigenschaft
+            </summary>
+        </member>
+        <member name="P:Core.Verlauf.ZurückPuffer">
+            <summary>
+            Ruft die Liste mit den Objekten, zu denen
+            Zurückgewechselt werden kann, ab.
+            </summary>
+        </member>
+        <member name="P:Core.Verlauf.VorwärtsPuffer">
+            <summary>
+            Ruft die Liste mit den Objekten, zu denen
+            Vorwärtsgewechselt werden kann, ab.
+            </summary>
+        </member>
+        <member name="M:Core.Verlauf.Hinterlegen(System.Object)">
+            <summary>
+            Fügt dem Verlauf ein neues Objekt hinzu.
+            </summary>
+            <param name="element">Das Objekt, das dem
+            Verlauf hinzugefügt werden soll.</param>
+            <remarks>Der Vorwärtspuffer wird dabei geleert.
+            Sollten im Zurückpuffer mehr als Element enthalten
+            sein, wird das ZurückMöglich Ereignis ausgelöst.</remarks>
+        </member>
+        <member name="M:Core.Verlauf.HoleZurückObjekt">
+            <summary>
+            Fügt das aktuelle Objekt des Zurückpuffers
+            in den Vorwärtspuffer und gibt 
+            das darunterliegende Objekt zurück.
+            </summary>
+            <remarks>Dabei wird das VorwärtsMöglich Ereignis
+            ausgelöst. Sollte sich im Zurückpuffer nur mehr
+            ein Objekt befinden, das KeinZurück Ereignis.</remarks>
+        </member>
+        <member name="M:Core.Verlauf.HoleVorwärtsObjekt">
+            <summary>
+            Stellt das oberste Element des Vorwärtspuffers
+            in den Rückwärtspuffer und gibt es zurück.
+            </summary>
+            <remarks>Sollte der Vorwärtspuffer leer sein,
+            wird das Ereignis KeinVorwärts ausgelöst. Sollten
+            sich im Rückwärtspuffer mehr als ein Objekt
+            befinden, wird ZurückMöglich ausgelöst.</remarks>
+        </member>
+    </members>
+</doc>

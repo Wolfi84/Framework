@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.csproj.CopyComplete
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Windows.Forms.xml
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Windows.Forms.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Windows.Forms.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.dll
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.pdb
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.xml
+C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\de\Wolfi.Core.resources.dll
