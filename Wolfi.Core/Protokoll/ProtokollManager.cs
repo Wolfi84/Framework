@@ -51,6 +51,8 @@ namespace Wolfi.Core.Protokoll
             this.Eintragen(new ProtokollEintrag { Typ = typ, Text = text });
         }
 
+
+
         /// <summary>
         /// Fügt dem Protokoll einen Eintrag hinzu.
         /// </summary>
@@ -63,11 +65,35 @@ namespace Wolfi.Core.Protokoll
             {
                 this.FehlerVorhanden = true;
             }
+            if (this.AppKontext.Dispatcher != null)
+            {
+                //Damit die Threadsicherheit gewährleistet ist,
+                //die Schritte, die überall Daten ändern,
+                //über den Threaddienst von WPF aufrufen...
+                var InvokeBeschreibung = this.AppKontext.Dispatcher.GetType()
+                   .GetMethod("Invoke", new Type[] { typeof(System.Action) });
 
-            this.Liste.Add(zeile);
-            this.Rückrufe.AlleAusführen();
-
-            this.Speichern(zeile);
+                InvokeBeschreibung.Invoke(
+                  this.AppKontext.Dispatcher,
+                  new object[]
+                  {
+                        new System.Action(
+                            () =>
+                            {
+                                this.Liste.Add(zeile);
+                                this.Rückrufe.AlleAusführen();
+                                this.Speichern(zeile);
+                            }
+                        )
+                  });
+            }
+            else
+            {
+                //Die Threadsicherheit ist nicht gewährleistet...
+                this.Liste.Add(zeile);
+                this.Rückrufe.AlleAusführen();
+                this.Speichern(zeile);
+            }
         }
 
         /// <summary>
@@ -249,6 +275,7 @@ namespace Wolfi.Core.Protokoll
             set
             {
                 this._Pfad = value;
+
             }
         }
 
@@ -261,7 +288,7 @@ namespace Wolfi.Core.Protokoll
         /// wird die Funktion automatisch deaktiviert.</remarks>
         protected virtual void Speichern(ProtokollEintrag eintrag)
         {
-            if (this.Pfad != string.Empty)
+            if (!String.IsNullOrEmpty(this.Pfad))
             {
                 const int MaxVersuche = 10;
                 int Versuche = MaxVersuche;
@@ -295,12 +322,13 @@ namespace Wolfi.Core.Protokoll
                     catch (System.IO.IOException ioEx)
                     {
                         Versuche--;
-                        System.Threading.Thread.Sleep(this.AppKontext.Zufallsgenerator.Next(200, 300 + 1));
+                        System.Threading.Thread.Sleep(this.AppKontext.Zufallsgenerator.Next(400 +1));
                     }
                     catch (System.Exception ex)
                     {
                         Versuche = 0;
                         this.Pfad = string.Empty;
+                        this.Eintragen($"Aufgrund der Exeption \"{ex.Message}\". Wurde der Speichern im Logfile ausgeschaltet... ", ProtokollEintragTyp.Fehler);
                     }
 
                 } while (Versuche != 0);

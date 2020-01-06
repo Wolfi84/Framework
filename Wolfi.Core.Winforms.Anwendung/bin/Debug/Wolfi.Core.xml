@@ -358,6 +358,14 @@
             Ruft den Zufallsgenerator der Anwendung ab.
             </summary>
         </member>
+        <member name="P:Wolfi.Core.Kontext.Anwendungskontext.Dispatcher">
+            <summary>
+            Ruft den Thread-Dienst einer
+            WPF Anwendung ab oder legt diesen fest.
+            </summary>
+            <remarks>Notwendig, damit das Hinzufügen
+            von Protokolleinträgen für WPF threadsicher wird.</remarks>
+        </member>
         <member name="T:Wolfi.Core.Kontext.Anwendungsobjekt">
             <summary>
             Basisobjekt einer Anwendung

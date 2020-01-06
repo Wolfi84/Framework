@@ -260,5 +260,13 @@ namespace Wolfi.Core.Kontext
             }
         }
 
+        /// <summary>
+        /// Ruft den Thread-Dienst einer
+        /// WPF Anwendung ab oder legt diesen fest.
+        /// </summary>
+        /// <remarks>Notwendig, damit das Hinzufügen
+        /// von Protokolleinträgen für WPF threadsicher wird.</remarks>
+        public object Dispatcher { get; set; }
+
     }
 }
