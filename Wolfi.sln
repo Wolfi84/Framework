@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolfi.Core.Winforms.Anwendu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolfi.Core.WPF.Anwendung", "Wolfi.Core.WPF.Anwendung\Wolfi.Core.WPF.Anwendung.csproj", "{CD09B785-4CE2-432F-B114-CDFB2BA09FFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolfi.Windows", "Wolfi.Windows\Wolfi.Windows.csproj", "{6C683EDB-AB21-44EC-86EC-C17381647532}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CD09B785-4CE2-432F-B114-CDFB2BA09FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD09B785-4CE2-432F-B114-CDFB2BA09FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD09B785-4CE2-432F-B114-CDFB2BA09FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C683EDB-AB21-44EC-86EC-C17381647532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C683EDB-AB21-44EC-86EC-C17381647532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C683EDB-AB21-44EC-86EC-C17381647532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C683EDB-AB21-44EC-86EC-C17381647532}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

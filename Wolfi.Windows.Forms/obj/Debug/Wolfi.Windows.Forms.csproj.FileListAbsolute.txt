@@ -9,3 +9,15 @@ C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.dll
 C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.pdb
 C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.xml
 C:\Users\Admin\source\repos\Framework\Wolfi.Windows.Forms\de\Wolfi.Core.resources.dll
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.csprojAssemblyReference.cache
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.csproj.CoreCompileInputs.cache
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.csproj.CopyComplete
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.dll
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\Wolfi.Windows.Forms.xml
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\obj\Debug\Wolfi.Windows.Forms.pdb
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\Wolfi.Windows.Forms.dll
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\Wolfi.Windows.Forms.pdb
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.dll
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.pdb
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\Wolfi.Core.xml
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows.Forms\de\Wolfi.Core.resources.dll

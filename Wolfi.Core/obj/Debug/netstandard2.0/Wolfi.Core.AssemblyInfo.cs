@@ -28,6 +28,7 @@ Wolfi mit Firmennamen austauschen ;-)")]
 [assembly: System.Reflection.AssemblyProductAttribute("Basisfunktionen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wolfi.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/Wolfi84/Framework")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
 

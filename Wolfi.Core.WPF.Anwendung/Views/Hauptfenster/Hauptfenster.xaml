@@ -17,6 +17,6 @@
         Title="{x:Static p:Texte.Anwendungstitel}">
     
     <Grid>
-        
+        <local:AufgabenView/>
     </Grid>
 </Window>

@@ -77,6 +77,16 @@
             <param name="basisTeil">Der absolute Pfad, mit dem der Pfad beginnen soll.</param>
             <returns>Eine absolute Pfadangabe bestehend aus Basis- und Endeteil.</returns>
         </member>
+        <member name="M:Wolfi.Core.Erweiterungen.Werkzeug.Durchmischen``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Mischt die Anordnung der List Items durch.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="liste"></param>
+            <remarks>
+            Es wird die System.Security.Cryptography Bibliothek verwendet
+            </remarks>
+        </member>
         <member name="T:Wolfi.Core.Fenster.FensterListe">
             <summary>
             Stellt eine Liste von Anwendungsfenstern bereit.

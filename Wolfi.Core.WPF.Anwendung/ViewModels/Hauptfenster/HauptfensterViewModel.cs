@@ -62,7 +62,7 @@ namespace Wolfi.Core.WPF.Anwendung.ViewModels.Hauptfenster
             //Dazu dem Fenster einen Namen verpassen...
             fenster.Name = fenster.GetType().Name;
 
-            //Also, eine eigene Liste mit den aktuellen Fensternamen aufbauen...
+            //Eine eigene Liste mit den aktuellen Fensternamen aufbauen...
             var OffeneFenster = new System.Collections.ArrayList(System.Windows.Application.Current.Windows.Count);
             foreach (System.Windows.Window w in System.Windows.Application.Current.Windows)
             {
@@ -156,6 +156,75 @@ namespace Wolfi.Core.WPF.Anwendung.ViewModels.Hauptfenster
                 }
                 
                 this.AppKontext.Sprachen.AktuelleSprache = value;
+
+                this.OnPropertyChanged();
+            }
+        }
+
+
+        /// <summary>
+        /// Internes Feld für die Eigenschaft.
+        /// </summary>
+        private Models.DTOs.Aufgaben _Aufgaben = null;
+
+        /// <summary>
+        /// Ruft die Anwendungspunkte ab.
+        /// </summary>
+        public Models.DTOs.Aufgaben Aufgaben
+        {
+            get
+            {
+                if (this._Aufgaben == null)
+                {
+                    this.AktiviereBeschäftigt();
+
+                    var AufgabenManager = this.AppKontext.Erzeuge<Models.Manager.AufgabenManager>();
+                    this._Aufgaben = AufgabenManager.Liste;
+
+                    this.AppKontext.Protokoll.Eintragen("Das Fenster hat die Aufgaben gecachet...");
+
+                    //Die Standardaufgabe aktivieren...
+                    var i = Wolfi.Core.WPF.Anwendung.Properties.Settings.Default.AktuelleAufgabe;
+                    if (this._Aufgaben != null && i < this._Aufgaben.Count)
+                    {
+                        this.AktuelleAufgabe = this._Aufgaben[i];
+                        this.AppKontext.Protokoll.Eintragen($"Die Aufgabe \"{this.AktuelleAufgabe.Name}\" wurde aktiviert...");
+                    }
+
+                    this.DeaktiviereBeschäftigt();
+                }
+
+                return this._Aufgaben;
+            }
+        }
+
+
+        /// <summary>
+        /// Internes Feld für die Eigenschaft
+        /// </summary>
+        private Models.DTOs.Aufgabe _AktuelleAufgabe = null;
+
+        /// <summary>
+        /// Ruft den aktuellen Anwendungspunkt
+        /// ab oder legt diesen fest.
+        /// </summary>
+        public Models.DTOs.Aufgabe AktuelleAufgabe
+        {
+            get
+            {
+                return this._AktuelleAufgabe;
+            }
+            set
+            {
+                this._AktuelleAufgabe = value;
+
+                if (this._AktuelleAufgabe.Arbeitsbereich == null
+                    && this._AktuelleAufgabe.ArbeitsbereichTyp != null)
+                {
+                    this._AktuelleAufgabe.Arbeitsbereich
+                        = System.Activator.CreateInstance(this._AktuelleAufgabe.ArbeitsbereichTyp)
+                        as System.Windows.Controls.UserControl;
+                }
 
                 this.OnPropertyChanged();
             }

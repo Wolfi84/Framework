@@ -1,0 +1,6 @@
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows\bin\Debug\Wolfi.Windows.dll
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows\bin\Debug\Wolfi.Windows.pdb
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows\obj\Debug\Wolfi.Windows.csprojAssemblyReference.cache
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows\obj\Debug\Wolfi.Windows.csproj.CoreCompileInputs.cache
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows\obj\Debug\Wolfi.Windows.dll
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Windows\obj\Debug\Wolfi.Windows.pdb

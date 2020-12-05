@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\source\repos\Framework\Wolfi.Core.WPF.Anwendung\obj\Debug\
+F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core.WPF.Anwendung\obj\Debug\
 Wolfi.Core.WPF.Anwendung
 none
 false
 DEBUG;TRACE
 
-250932671
+4-1004088277
 
-10-1487675752
-15-185967665
-Anwendung\App.xaml;Views\Hauptfenster\Hauptfenster.xaml;
+14-1468370391
+151344605431
+Anwendung\App.xaml;Views\Hauptfenster\AufgabenView.xaml;Views\TestView.xaml;Views\Hauptfenster\Hauptfenster.xaml;
 
-False
+True
 

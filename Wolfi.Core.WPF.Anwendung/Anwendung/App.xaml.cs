@@ -20,8 +20,7 @@ namespace Wolfi.Core.WPF.Anwendung
             //Unsere Infrastruktur hochfahren...
             var AppKontext = new Core.Kontext.Anwendungskontext();
 
-            ////Die Protokolleinträge sollen gespeichert werden...
-            //
+            //Die Protokolleinträge sollen gespeichert werden...
             if (Anwendung.Properties.Settings.Default.LoggingEinAus)
             {
                 var Pfad = System.IO.Path.Combine(AppKontext.AnwendungsdatenPfadLokal, Anwendung.Properties.Settings.Default.ProtokollVerzeichnis);
@@ -69,6 +68,8 @@ namespace Wolfi.Core.WPF.Anwendung
 
             //Das ViewModel starten...
             var VM = AppKontext.Erzeuge<ViewModels.Hauptfenster.HauptfensterViewModel>();
+
+            _ = VM.Aufgaben;
 
             VM.Starten<Views.Hauptfenster.Hauptfenster>();
 
