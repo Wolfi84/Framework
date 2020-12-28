@@ -1,0 +1,9 @@
+﻿<Application x:Class="Wolfi.Core.WPF.NetCore.Anwendung.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Wolfi.Core.WPF.NetCore.Anwendung"
+             StartupUri="/Views/Hauptfenster/Hauptfenster.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

@@ -69,7 +69,7 @@ namespace Wolfi.Core.Protokoll
             {
                 //Damit die Threadsicherheit gewährleistet ist,
                 //die Schritte, die überall Daten ändern,
-                //über den Threaddienst von WPF aufrufen...
+                //über den Threaddienst aufrufen...
                 var InvokeBeschreibung = this.AppKontext.Dispatcher.GetType()
                    .GetMethod("Invoke", new Type[] { typeof(System.Action) });
 

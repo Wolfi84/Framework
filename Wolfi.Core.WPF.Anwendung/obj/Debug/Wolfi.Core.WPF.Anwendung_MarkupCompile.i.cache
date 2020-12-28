@@ -16,5 +16,5 @@ DEBUG;TRACE
 151344605431
 Anwendung\App.xaml;Views\Hauptfenster\AufgabenView.xaml;Views\TestView.xaml;Views\Hauptfenster\Hauptfenster.xaml;
 
-True
+False
 

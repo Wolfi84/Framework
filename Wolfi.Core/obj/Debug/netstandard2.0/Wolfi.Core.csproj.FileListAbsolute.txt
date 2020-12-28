@@ -31,7 +31,6 @@ F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core\bin\Debug\netstand
 F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core\bin\Debug\netstandard2.0\Wolfi.Core.pdb
 F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core\bin\Debug\netstandard2.0\Wolfi.Core.xml
 F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core\bin\Debug\netstandard2.0\de\Wolfi.Core.resources.dll
-F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core\obj\Debug\netstandard2.0\Wolfi.Core.csprojAssemblyReference.cache
 F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core\obj\Debug\netstandard2.0\Wolfi.Core.Properties.Resources.resources
 F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core\obj\Debug\netstandard2.0\Wolfi.Core.Properties.Resource.de.resources
 F:\Nextcloud.Nidschi\Persönliches\repos\Framework\Wolfi.Core\obj\Debug\netstandard2.0\Wolfi.Core.csproj.GenerateResource.cache

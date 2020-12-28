@@ -1,0 +1,46 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Wolfi.Core.WPF.NetCore.Anwendung/1.0.0": {
+        "dependencies": {
+          "Wolfi.Core": "1.0.0"
+        },
+        "runtime": {
+          "Wolfi.Core.WPF.NetCore.Anwendung.dll": {}
+        },
+        "resources": {
+          "de/Wolfi.Core.WPF.NetCore.Anwendung.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Wolfi.Core/1.0.0": {
+        "runtime": {
+          "Wolfi.Core.dll": {}
+        },
+        "resources": {
+          "de/Wolfi.Core.resources.dll": {
+            "locale": "de"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Wolfi.Core.WPF.NetCore.Anwendung/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Wolfi.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
